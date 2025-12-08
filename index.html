@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر عناصر روبلوكس</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --roblox-red: #ff5757;
+            --main-dark: #333;
+            --success-green: #28a745;
+            --background-light: #f7f7f7;
+        }
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            background: var(--background-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--roblox-red);
+            padding: 25px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background: var(--main-dark);
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--roblox-red);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .items-grid {
+            display: grid;
+            /* عرض 3 منتجات في الصف الواحد على الشاشات الكبيرة */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .item h3 {
+            color: var(--roblox-red);
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        .item p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+        }
+        .btn {
+            display: block;
+            background: var(--success-green);
+            color: white;
+            padding: 12px 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #1e7e34;
+        }
+        h2 {
+            text-align: right;
+            border-bottom: 3px solid var(--roblox-red);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            color: var(--main-dark);
+            font-size: 28px;
+        }
+
+        /* الاستجابة للهواتف الصغيرة */
+        @media (max-width: 600px) {
+            header {
+                font-size: 24px;
+                padding: 15px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>متجر عناصر ألعاب روبلوكس</header>
+
+<nav>
+    <a href="#fruits">فواكه Blox Fruits</a>
+    <a href="#pets">حيوانات المزرعة</a>
+    <a href="#brains">عقول ماب السرقة</a>
+</nav>
+
+<div class="container">
+
+    <h2 id="fruits">🍎 فواكه Blox Fruits</h2>
+    <div class="items-grid">
+        <div class="item">
+            <h3>فاكهة الضوء (Light)</h3>
+            <img src="https://i.imgur.com/GPWf1hC.png" alt="فاكهة الضوء">
+            <p>السعر: 25 درهم</p>
+            <a class="btn" href="https://wa.me/212600000000?text=أريد%20شراء%20فاكهة%20الضوء%20(Light)%20من%20متجركم." target="_blank">شراء عبر واتساب</a>
+        </div>
+
+        <div class="item">
+            <h3>فاكهة النار (Flame)</h3>
+            <img src="https://i.imgur.com/jx0hQmH.png" alt="فاكهة النار">
+            <p>السعر: 20 درهم</p>
+            <a class="btn" href="https://wa.me/212600000000?text=أريد%20شراء%20فاكهة%20النار%20(Flame)%20من%20متجركم." target="_blank">شراء عبر واتساب</a>
+        </div>
+        
+        </div>
+
+    <h2 id="pets">🐄 حيوانات ماب المزرعة</h2>
+    <div class="items-grid">
+        <div class="item">
+            <h3>Chicken Pet</h3>
+            <img src="https://i.imgur.com/9m1mSxl.png" alt="Chicken Pet">
+            <p>السعر: 15 درهم</p>
+            <a class="btn" href="https://wa.me/212600000000?text=أريد%20شراء%20حيوان%20Chicken%20Pet%20من%20متجركم." target="_blank">شراء عبر واتساب</a>
+        </div>
+
+        <div class="item">
+            <h3>Cow Pet</h3>
+            <img src="https://i.imgur.com/4Zbqj7z.png" alt="Cow Pet">
+            <p>السعر: 30 درهم</p>
+            <a class="btn" href="https://wa.me/212600000000?text=أريد%20شراء%20حيوان%20Cow%20Pet%20من%20متجركم." target="_blank">شراء عبر واتساب</a>
+        </div>
+    </div>
+
+
+    <h2 id="brains">🧠 عقول ماب السرقة</h2>
+    <div class="items-grid">
+        <div class="item">
+            <h3>Brain Pack (10 عقول)</h3>
+            <img src="https://i.imgur.com/QfQ2ERK.png" alt="Brain Pack">
+            <p>السعر: 10 درهم</p>
+            <a class="btn" href="https://wa.me/212600000000?text=أريد%20شراء%20حزمة%20Brain%20Pack%20(10%20عقول)%20من%20متجركم." target="_blank">شراء عبر واتساب</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
