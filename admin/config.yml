@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: elmakkiachraf77-hue/MR-SHOP  # <--- تأكد أن اسم المستخدم والمستودع صحيحان
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "shop_items"
+    label: "منتجات المتجر"
+    folder: "_data/shop"
+    create: true
+    slug: "{{fields.title}}"
+    fields:
+      - {label: "القسم (مثلاً: fruits)", name: "section_id", widget: "string"}
+      - {label: "العنوان (فاكهة الضوء)", name: "title", widget: "string"}
+      - {label: "الوصف", name: "description", widget: "text", required: false}
+      - {label: "السعر (الرقم فقط)", name: "price", widget: "number"}
+      - {label: "رابط الصورة (URL)", name: "image_url", widget: "string"}
+      - {label: "رابط الشراء (WhatsApp/PayPal)", name: "purchase_link", widget: "string"}
