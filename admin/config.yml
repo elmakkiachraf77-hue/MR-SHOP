@@ -1,7 +1,10 @@
 backend:
   name: github
-  repo: elmakkiachraf77-hue/MR-SHOP  # <--- تأكد أن اسم المستخدم والمستودع صحيحان
+  repo: elmakkiachraf77-hue/MR-SHOP  # <--- هذا هو اسم مستودعك!
   branch: main
+
+# هذا السطر ضروري جداً لموقع GitHub Pages
+site_url: https://elmakkiachraf77-hue.github.io/MR-SHOP
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
